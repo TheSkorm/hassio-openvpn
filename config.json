@@ -1,0 +1,18 @@
+{
+    "name": "OpenVPN Server",
+    "version": "1",
+    "slug": "openvpn",
+    "description": "Runs a openvpn server",
+    "startup": "before",
+    "boot": "auto",
+    "host_network": true,
+    "privileged": ["NET_ADMIN"],
+    "options": {
+      "config": "",
+      "key": ""
+    },
+    "schema": {
+      "config": "str",
+      "key": "str"
+    }
+  }
